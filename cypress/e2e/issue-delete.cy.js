@@ -1,3 +1,4 @@
+
 describe("Issue details editing", () => {
   beforeEach(() => {
     cy.visit("/");
@@ -39,3 +40,4 @@ describe("Issue details editing", () => {
   const getIssueDetailsModal = () =>
     cy.get('[data-testid="modal:issue-details"]');
 });
+
