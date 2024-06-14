@@ -1,4 +1,4 @@
-describe("Issue create", () => {
+describe("Issue time tracking", () => {
   beforeEach(() => {
     cy.visit("/");
     cy.url()
