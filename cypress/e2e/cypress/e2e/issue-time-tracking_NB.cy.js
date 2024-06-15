@@ -82,7 +82,8 @@ describe("Issue create", () => {
         cy.contains("button", "Done").click();
       });
     cy.get(TimeTrackingModal).should("not.exist");
-    cy.contains("2h logged").and("5h remaining").should("be.visible");
+    cy.contains("2h logged").should("be.visible");
+    cy.contains("5h remaining").should("be.visible");
 
     cy.get(TimeLoggingWatch).click();
     cy.get(TimeTrackingModal)
